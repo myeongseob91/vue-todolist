@@ -2,14 +2,21 @@
 
   <div id="app">
     <app-header></app-header>
-    <img src="./assets/logo.png">
-    <router-view/>
+    <Canvas></Canvas>
+    <InputComponent></InputComponent>
+    <!--<router-view/>-->
   </div>
 </template>
 
 <script>
+  import InputComponent from "./components/Input";
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    InputComponent,
+
+  }
 }
 </script>
 

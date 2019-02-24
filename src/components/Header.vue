@@ -1,5 +1,6 @@
 <template>
-  <p>{{msg}}</p>
+  <h3 class="ui block header" style="margin-top: -61px">header</h3>
+
 </template>
 
 <script>
