@@ -3,18 +3,17 @@
   <div id="app">
     <app-header></app-header>
     <Canvas></Canvas>
-    <InputComponent></InputComponent>
     <!--<router-view/>-->
   </div>
 </template>
 
 <script>
-  import InputComponent from "./components/Input";
+  import Canvas from "./components/Canvas";
 
 export default {
   name: 'App',
   components: {
-    InputComponent,
+    Canvas,
 
   }
 }

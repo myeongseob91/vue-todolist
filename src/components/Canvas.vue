@@ -1,15 +1,14 @@
 <template>
   <div>
-    canvas
+    <ListWrapComponent>ddd</ListWrapComponent>
   </div>
 </template>
 
 <script>
-  import ListWrap from "./components/ListWrap";
+  import ListWrapComponent from "./ListWrapComponent";
   export default {
-
     components : {
-      ListWrap
+      ListWrapComponent
     }
   }
 </script>

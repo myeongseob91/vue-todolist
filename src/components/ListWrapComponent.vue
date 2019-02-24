@@ -1,12 +1,15 @@
 <template>
   <div class="listWrap">
-      listWrap
+      <ListComponent></ListComponent>
   </div>
 </template>
 
 <script>
+import ListComponent from './ListComponent'
     export default {
-        name: "ListWrap"
+        components : {
+            ListComponent
+        }
     }
 </script>
 
