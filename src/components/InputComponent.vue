@@ -1,15 +1,22 @@
 <template>
       <div class="ui input">
-        <input type="text" v-on:keyup.enter="inputSave" placeholder="Enter a title for this card...">
+       
+        <input type="text" class="toggle" v-on:keyup.13.prevent="addTodo" v-model.trim="newTodo" placeholder="Enter a title for this card...">
       </div>
 </template>
 
 <script>
   export default {
     name : 'InputComponent',
+    data() {
+      return {
+        newTodo :''
+      }
+    },
     methods : {
-      inputSave:function() {
-        console.log("엔터엔터")
+      addTodo:function() {
+        this.$emit('pushData',this.newTodo);
+       this.newTodo = '';
       }
     }
   }
